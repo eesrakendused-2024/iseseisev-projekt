@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deadline Dash</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "Y9Qk-67klSV3X89XM",
+      });
+   })();
+</script>
+</head>
+<body>
+  <div class="container">
+    <div class="tasks">
+      <h2>Deadline Dash <img class="check-mark" src="images/check-mark.png"></h2>
+      <div class="row">
+        <input type="text" id="input-box" placeholder="Add">
+        <button onclick="addTask()">+</button>
+      </div>
+      <ul id="list-container"></ul>
+    </div>
+      <input type="file" id="image_input" accept="image/*">
+      <button id="image-select-button">Choose image</button>
+      <div id="display_image">
+    </div>
+    <div class="mailsending">
+      <div class="mailsending-container">
+      <input type="text" id="name" placeholder="name" required/><br/>
+      <input class="email" id="email_id" type="email" placeholder="Email Id" required /><br/>
+      <textarea id="message" placeholder="Message" required></textarea><br/>
+      <button onclick="sendMail()">Send</button>
+    </div>
+  </div>
+    <script src="script.js"></script>
+  </div>
+</body>
+</html>
