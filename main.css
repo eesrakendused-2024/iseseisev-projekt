@@ -1,0 +1,43 @@
+body {
+  background: #7FCA74;
+}
+
+.mainBox {
+  background: #EEEEEE;
+  margin: 0 auto;
+  padding-left: 3px;
+  padding-top: 3px;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  height: 499px;
+  width: 500px;
+}
+
+.box {
+  background-image: url(https://picsum.photos/500) !important;
+  border-radius: 10px;
+  border: 1px solid #72726E;
+  float: left;
+  height: 103px;
+  margin-bottom: 2px;
+  margin-left: 1px;
+  margin-right: 1px;
+  width: 120px;
+  color: #34452C;
+  padding-top: 17px;
+}
+
+.activeBox {
+  background: #34452c;
+  background-image: none;
+  border-radius: 10px;
+  border: 1px solid #72726E;
+  float: left;
+  height: 120px;
+  width: 120px;
+  margin: 1px;
+}
+
+.clickable {
+  cursor: pointer;
+}
